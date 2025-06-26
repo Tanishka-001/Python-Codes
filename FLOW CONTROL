@@ -1,1 +1,126 @@
 Contains all the flow control related codes
+# Q1 Write a program to check if a number is positive, negative, or zero using if, elif, else.
+n = int(input("Enter the number:"))
+if n == 0:
+    print("The number is zero:",n)
+elif n>0:
+    print("The number is positive:",n)
+elif n<0:
+    print("The number is negative:",n)
+    
+    
+ # Q2 Check if a number is even or odd 
+n = int(input("Enter the number : "))
+if n%2==0:
+    print("The number is even:",n)
+else:
+    print("The number is odd:",n)
+    
+# Q3 Determine if a given year is a leap year.
+y = int(input("Enter the number : "))
+if y%400==0:
+    print("Its is leap year:",y)
+elif y%100==0:
+    print("Its is not a leap year:",y)
+elif y%4==0:
+    print("Its is leap year:",y)
+else:
+    print("Given Number is not a leap year.")
+
+# # Q4 Write a program to find the largest of three numbers.
+a = int(input("Enter Number:"))  
+b = int(input("Enter Number:"))  
+c = int(input("Enter Number:"))  
+
+if a>b and a>c:
+    print("The value of a is greatest among three numbers:",a)
+elif b>c and b>a :
+    print("The value of b is greatest among three numbers:",b)
+elif c>b and c>a:
+    print("The value of c is greatest among three numbers:",c)
+else:
+    print("None of the value is greater.")
+
+# #Q5 Check if a string is a palindrome.
+
+a =  input("Enter String:")
+if a==a[::-1]:
+    print("The given Input is Palindrome:",a)
+else:
+    print("The given Input is not Palindrome:",a)
+    
+# # #Q5.1 Check if a string is a palindrome (ignoring case and spaces).
+
+A = input("Enter String:")
+clear_str = A.replace(" ","").lower()
+if A==A[::-1]:
+    print('It is Palindrome:',A)
+else:
+    print('is not Palindrome:',A)
+
+#Q5.1 Check if a number/value is a palindrome.
+
+n = (input("Enter the Number:"))
+if n==n[::-1]:
+    print("Its palindrome number:",n)
+else:
+    print("Not a Palindrome number")
+
+# #Q6 Determine whether a character is a vowel or consonant.	
+
+n = (input("Enter the Character:"))
+if n in ('A','E','I','O','U','a','e','i','o','u'):
+    print("The Given character is Vowel")
+    
+else:
+    print("The given Character is consonant")
+
+#Q7 Create a program that categorizes a student’s grade based on marks.
+
+n = int(input("Enter Marks:"))
+if n >= 90 :
+    print("The grade is A :",n)
+elif n >= 70:
+    print("The grade is B :",n)
+elif n >= 60:
+    print("The grade is C :",n)
+elif n >= 40:
+    print("The grade is D :",n)
+elif n<35:
+    print("Fail!")
+else:
+    print("Enter the correct value!!!")
+
+#Q8 Build a simple login system with if-else (hardcoded username and password).
+
+correct_username = "Admin"
+correct_password = "Qwerty65"
+username = input("Enter the username: ")
+password = input("Enter the password: ")
+if username == correct_username and correct_password == password: 
+    print("Login Sucessful! ")
+else:
+    print("Invalid Login,Try again!")
+
+# Q9 Find whether a number is divisible by both 3 and 5 (FizzBuzz).
+
+N = int(input("Enter the number :"))
+if N%3==0 and N%5 == 0:
+    print("The Number is divisible by 3 and 5 :",N)
+else:
+    print("The number is not divisible by 3 and 5!: ",N)
+    
+# Q10 Reverse a string without using built-in functions.
+s = input("Enter a string : ")
+rs =""
+for c in s:
+    rs = c + rs
+print("Reversed String:",rs)
+
+# Q11 Count the frequency of characters in a string.
+s = input("Enter the string:")
+c = ""
+for char in s:
+    count = s.count(char)
+    print(f"The character '{char}' appears {count} times.")
+
